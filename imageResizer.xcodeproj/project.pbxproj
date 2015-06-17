@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83B8E6731ADAC8F400E3AF59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8E6721ADAC8F400E3AF59 /* main.m */; };
+		83B8E67B1ADACEAD00E3AF59 /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83B8E67A1ADACEAD00E3AF59 /* NSImage+MGCropExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		83B8E66F1ADAC8F400E3AF59 /* imageResizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = imageResizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B8E6721ADAC8F400E3AF59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83B8E6791ADACEAD00E3AF59 /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
+		83B8E67A1ADACEAD00E3AF59 /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				83B8E6721ADAC8F400E3AF59 /* main.m */,
+				83B8E6791ADACEAD00E3AF59 /* NSImage+MGCropExtensions.h */,
+				83B8E67A1ADACEAD00E3AF59 /* NSImage+MGCropExtensions.m */,
 			);
 			path = imageResizer;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B8E67B1ADACEAD00E3AF59 /* NSImage+MGCropExtensions.m in Sources */,
 				83B8E6731ADAC8F400E3AF59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +201,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
