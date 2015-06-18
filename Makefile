@@ -3,9 +3,14 @@ OBJS=$(SRCS:.m=.o)
 
 LDFLAGS=-framework AppKit
 TARGET=imageResizer
+MG_URL=http://mattgemmell.com/files/source/imagecrop.tgz
+MGCROP=NSImage+MGCropExtensions.m
 
-all:	$(TARGET)
+all: $(MGCROP) $(TARGET)
 
+$(MGCROP):
+	curl $(MG_URL) | tar -zxv --strip=1 ImageCropDemo/NSImage+MGCropExtensions.{m,h}
+	
 $(OBJS): %.o: %.m
 	$(CC) -c $(CFLAGS) $< -o $@
 
